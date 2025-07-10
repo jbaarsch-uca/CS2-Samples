@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+// Basic Class Definitions from Day One:  Exploring Classes
 class Rectangle {
 private:
     int width;
