@@ -8,6 +8,8 @@ private:
 	int length;
 	int width;
 public:
+	Rectangle();
+	Rectangle(int l, int w);
 	int getLength();
 	int getWidth();
 	void setLength(int l);

@@ -1,14 +1,21 @@
 #include "Rectangle.h"
 #include "Car.h"
+#include "RectangleConsole.h"
 #include <iostream>
 #include <string>
 using namespace std;
 
 // Basic Class Definitions from Day One:  Exploring Classes
 
+Rectangle* createRectangle();
+void displayRectangle(Rectangle* rect);
+
+RectangleConsole rc;
+
 int main()
 {
-    
+    displayRectangle(createRectangle());
+    /*
     Rectangle myR;
     myR.setWidth(4);
     myR.setLength(6);
@@ -17,9 +24,12 @@ int main()
         << myR.getLength() << endl
         << myR.getArea() << endl;
     
-
+    
     Car myCar, yourCar;
-
+    Car herCar("Red", 120000, 200, "Miata");
+    Car* CarPtr;
+    CarPtr = new Car("Red", 120000, 200, "Miata");
+    /*
     myCar.setColor("Grey");
     myCar.setModel("Rogue");
     myCar.setKm(50000);
@@ -29,9 +39,21 @@ int main()
     yourCar.setModel("Porche");
     yourCar.setKm(0);
     yourCar.setPrice(200000);
-
+   
     cout << myCar.describeCar();
     cout << endl << yourCar.describeCar();
+    cout << endl << herCar.describeCar();
+     */
+}
+
+Rectangle* createRectangle() {
+    int length = rc.getInt("Length");
+    int width = rc.getInt("Width");
+    Rectangle* rect = new Rectangle(length, width);
+    return rect;
+}
+void displayRectangle(Rectangle* rect) {
+    rc.displayRectangle(rect);
 }
 
 

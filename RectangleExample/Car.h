@@ -9,15 +9,19 @@ private:
     string color;
     double price;
     long km;
-    string model;
+    const string model;
     bool isRunning = false;
     int position = 0;
 public:
+    Car();
+    Car(string mod);
+    Car(string col, double pr, long kilo, string mod);
     // Setters
-    void setColor(std::string c);
+    void setColor(std::string c) {
+        color = c;
+    }
     void setPrice(double p);
     void setKm(long kiloM);
-    void setModel(string m);
     // Getters
     std::string getColor() const;
     double getPrice() const;

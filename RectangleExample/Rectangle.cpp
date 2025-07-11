@@ -1,6 +1,10 @@
 #include "Rectangle.h"
 #include <iostream>
 
+Rectangle::Rectangle() : Rectangle(1, 1) {}
+
+Rectangle::Rectangle(int l, int w) : length(l), width(w) {
+}
 
 void Rectangle::setLength(int l) {
 	length = l;

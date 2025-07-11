@@ -2,6 +2,23 @@
 #include <iostream>
 #include <string>
 
+Car::Car() : color("blue"), model("Honda") {
+    price = 100;
+    km = 5;
+    //model = "Honda";
+}
+
+Car::Car(string mod) : color("blue"), model(mod) {
+    price = 100;
+    km = 5;
+    //model = "Honda";
+}
+
+Car::Car(string col, double pr, long kilo, string mod) :
+    color(col), model(mod) {
+    price = pr;
+    km = kilo;
+}
 
 void Car::start() {
     isRunning = true;
@@ -17,18 +34,16 @@ void Car::backward(int distance) {
 }
 
 // Setters
-void Car::setColor(std::string c) {
-    color = c;
-}
+//void Car::setColor(std::string c) {
+//    color = c;
+//}
 void Car::setPrice(double p) {
     price = p;
 }
 void Car::setKm(long kiloM) {
     km = kiloM;
 }
-void Car::setModel(string m) {
-    model = m;
-}
+
 // Getters
 std::string Car::getColor() const {
     return color;
