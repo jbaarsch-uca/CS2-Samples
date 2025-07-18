@@ -1,6 +1,7 @@
 #include "Rectangle.h"
 #include "Car.h"
 #include "RectangleConsole.h"
+#include "Dog.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -14,7 +15,39 @@ RectangleConsole rc;
 
 int main()
 {
-    displayRectangle(createRectangle());
+    Dog myDog;
+    Dog yourDog;
+
+    //cout << "A dog has " << Dog::NUMBER_OF_LEGS << " legs." << endl;
+    //cout << myDog.displayDog() << endl;
+    Cat myCat;
+    
+
+    cout << myCat.displayCat() << endl;
+
+    myCat.setName("Shadow");
+
+    myCat.addLikedFood("Salmon");
+    myCat.addLikedFood("Rotisserie Chicken");
+
+
+    cout << "My Cat: " << myCat.displayCat() << endl;
+    //cout << "Your Cat: " << yourCat.displayCat() << endl;
+
+    cout << "...Your Cat = My Cat..." << endl;
+    Cat yourCat = myCat;
+    cout << "My Cat: " << myCat.displayCat() << endl;
+    cout << "Your Cat: " << yourCat.displayCat() << endl;
+
+    yourCat.changeFood("Beef", 0);
+    yourCat.changeFood("Dog", 1);
+
+    cout << "My Cat: " << myCat.displayCat() << endl;
+    cout << "Your Cat: " << yourCat.displayCat() << endl;
+
+
+
+    //displayRectangle(createRectangle());
     /*
     Rectangle myR;
     myR.setWidth(4);

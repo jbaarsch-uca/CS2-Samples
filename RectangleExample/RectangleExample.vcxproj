@@ -128,12 +128,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Car.cpp" />
+    <ClCompile Include="Cat.cpp" />
+    <ClCompile Include="Dog.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleConsole.cpp" />
     <ClCompile Include="RectangleExample.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
+    <ClInclude Include="Cat.h" />
+    <ClInclude Include="Dog.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RectangleConsole.h" />
   </ItemGroup>
