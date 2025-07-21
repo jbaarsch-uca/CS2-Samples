@@ -49,3 +49,4 @@ string Cat::displayCat(){
 void Cat::changeFood(string food, int index) {
 	likedFoods[index] = food;
 }
+

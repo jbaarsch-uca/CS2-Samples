@@ -132,7 +132,7 @@
     <ClCompile Include="Dog.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleConsole.cpp" />
-    <ClCompile Include="RectangleExample.cpp" />
+    <ClCompile Include="MainTester.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
