@@ -50,3 +50,34 @@ void Cat::changeFood(string food, int index) {
 	likedFoods[index] = food;
 }
 
+Cat& Cat::operator= (Cat& otherCat) {
+	// transfer instance variables from otherCat to this cat.
+	// name, likedFoods, and numOfLikedFoods
+	// Shallow Copy:
+	/*
+	this->name = otherCat.name;
+	this->likedFoods = otherCat.likedFoods;
+	this->numOfLikedFoods = otherCat.numOfLikedFoods;
+	return *this;
+	*/
+
+	// Deep Copy:
+	// 0.  Check for identity--are they they very same object
+	if (this != &otherCat) {
+		// 1. Copy all non-pointer instance data
+
+		this->name = otherCat.name;
+		this->numOfLikedFoods = otherCat.numOfLikedFoods;
+		// 2. make new dynamically allocated arrays for pointer data
+		delete[] this->likedFoods;
+		this->likedFoods = new string[numOfLikedFoods];
+
+		// 3. use a loop to cycle through the array elements.
+		for (int i = 0; i < numOfLikedFoods; i++) {
+			this->likedFoods[i] = otherCat.likedFoods[i];
+		}
+	}
+	return *this;
+
+}
+

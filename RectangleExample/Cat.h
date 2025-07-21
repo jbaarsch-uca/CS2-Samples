@@ -17,5 +17,6 @@ public:
 	string displayCat();
 	void addLikedFood(string food);
 	void changeFood(string food, int index);
+	Cat& operator= (Cat& otherCat);
 };
 
