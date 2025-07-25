@@ -4,18 +4,21 @@
 const int Dog::NUMBER_OF_LEGS = 4;
 
 Dog::Dog() : Dog("Fido") {
-
+	cout << " Dog Constructor called.  The Dog's name is "
+		<< getName() << endl;
 }
 Dog::Dog(string name) {
-	this->name = name;
+	this->setName(name);
 	this->age = 0;
+	cout << " Dog Constructor called.  The Dog's name is "
+		<< getName() << endl;
 }
-string Dog::getName() {
-	return name;
-}
-void Dog::setName(string name) {
-	this->name = name;
-}
+
+
 string Dog::displayDog() {
-	return "A Dog named " + name;
+	return "A Dog named " + this->getName();
+}
+
+void Dog::doTrick() {
+	cout << "The dog raises a paw to shake." << endl;
 }

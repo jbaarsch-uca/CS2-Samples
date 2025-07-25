@@ -127,17 +127,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animal.cpp" />
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Cat.cpp" />
+    <ClCompile Include="Die.cpp" />
     <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="GuardDog.cpp" />
+    <ClCompile Include="HuntingDog.cpp" />
+    <ClCompile Include="Lapdog.cpp" />
+    <ClCompile Include="Mutt.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleConsole.cpp" />
     <ClCompile Include="MainTester.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animal.h" />
     <ClInclude Include="Car.h" />
     <ClInclude Include="Cat.h" />
+    <ClInclude Include="Die.h" />
     <ClInclude Include="Dog.h" />
+    <ClInclude Include="GuardDog.h" />
+    <ClInclude Include="HuntingDog.h" />
+    <ClInclude Include="Lapdog.h" />
+    <ClInclude Include="Mutt.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RectangleConsole.h" />
   </ItemGroup>

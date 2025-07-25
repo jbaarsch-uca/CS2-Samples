@@ -2,6 +2,12 @@
 #include "Car.h"
 #include "RectangleConsole.h"
 #include "Dog.h"
+#include "GuardDog.h"
+#include "HuntingDog.h"
+#include "Lapdog.h"
+#include "Animal.h"
+#include "Mutt.h"
+#include "Die.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -19,8 +25,47 @@ void displayCat(Cat cat);
 
 int main()
 {
-    testAssignmentOperator();
 
+    Dog myDog;
+
+    GuardDog yourDog("Flower");
+
+    HuntingDog hisDog;
+
+    Lapdog theirDog;
+
+    Mutt herDog;
+
+    Dog* theDogs = new Dog[5];
+
+    theDogs[0] = myDog;
+    theDogs[1] = yourDog;
+    theDogs[2] = hisDog;
+    theDogs[3] = theirDog;
+    theDogs[4] = herDog;
+    cout << "TRICKS are for Dogs" << endl;
+    for (int i = 0; i < 5; i++)
+        (theDogs+i)->doTrick();
+
+
+
+    /*
+    //testAssignmentOperator();
+    Die myDie;
+    Die yourDie;
+
+    //cout << myDie;
+    //cout << yourDie;
+
+    Die sumDie = myDie + yourDie + myDie + yourDie + myDie;
+    sumDie.roll();
+    //cout << sumDie;
+
+    Die anotherDie = sumDie - myDie - yourDie;
+
+    anotherDie.roll();
+    //cout << anotherDie;
+    */
     
 }
 

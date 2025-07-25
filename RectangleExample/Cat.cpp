@@ -4,12 +4,12 @@
 
 Cat::Cat() : Cat("Felix") {}
 Cat::Cat(string name) {
-	this->name = name;
+	this->setName( name);
 	likedFoods = new string[0];
 	numOfLikedFoods = 0;
 }
 Cat::Cat(Cat& otherCat) {
-	this->name = otherCat.name;
+	this->setName(otherCat.getName());
 	this->numOfLikedFoods = otherCat.numOfLikedFoods;
 
 	this->likedFoods = new string[numOfLikedFoods];
@@ -19,10 +19,10 @@ Cat::Cat(Cat& otherCat) {
 }
 
 string Cat::getName() {
-	return name;
+	return getName();
 }
 void Cat::setName(string name) {
-	this->name = name;
+	this->getName() = name;
 }
 
 void Cat::addLikedFood(string food) {
@@ -39,7 +39,7 @@ void Cat::addLikedFood(string food) {
 string Cat::displayCat(){
 	string catDesc;
 	
-	catDesc += "A cat named " + name + " who eats: \n";
+	catDesc += "A cat named " + getName() + " who eats: \n";
 	for (int i = 0; i < numOfLikedFoods; i++) {
 		catDesc += "\t" + likedFoods[i] + "\n";
 	}
@@ -66,7 +66,7 @@ Cat& Cat::operator= (Cat& otherCat) {
 	if (this != &otherCat) {
 		// 1. Copy all non-pointer instance data
 
-		this->name = otherCat.name;
+		this->setName( otherCat.getName());
 		this->numOfLikedFoods = otherCat.numOfLikedFoods;
 		// 2. make new dynamically allocated arrays for pointer data
 		delete[] this->likedFoods;

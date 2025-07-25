@@ -1,10 +1,10 @@
 #pragma once
+#include "Animal.h"
 #include <iostream>
 using namespace std;
-class Cat
+class Cat : public Animal
 {
 private:
-	string name;
 	string* likedFoods;
 	int numOfLikedFoods;
 

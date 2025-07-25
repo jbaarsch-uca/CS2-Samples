@@ -2,20 +2,22 @@
 #include "Cat.h"
 #include <iostream>
 using namespace std;
-class Dog
+class Dog : public Animal
 {
 private: 
-	string name;
 	int age;
+	int weight;
 	
 public: 
 	static const int NUMBER_OF_LEGS;
 	Dog();
 	Dog(string name);
-	string getName();
-	void setName(string name);
 	string displayDog();
 	friend Cat;
+	// getters and setters for weight
+	int getWeight() { return weight; }
+	void setWeight() { this->weight = weight; }
+	virtual void doTrick();  // virtual?
 
 };
 
