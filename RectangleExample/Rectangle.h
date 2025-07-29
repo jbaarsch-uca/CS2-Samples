@@ -1,20 +1,24 @@
 #ifndef RECTANGLE
 #define RECTANGLE
+#include "Shape.h"
 #include <iostream>
 
 
-class Rectangle {
+class Rectangle : public Shape {
 private:
-	int length;
-	int width;
+	double length;
+	double width;
 public:
 	Rectangle();
-	Rectangle(int l, int w);
-	int getLength();
-	int getWidth();
-	void setLength(int l);
-	void setWidth(int w);
-	int getArea();
+	Rectangle(double l, double w);
+	Rectangle(Rectangle& otherRectangle);  // *
+	double getLength();
+	double getWidth();
+	void setLength(double l);
+	void setWidth(double w);
+	double getArea();
+	Rectangle& operator=(Rectangle& otherRect);
+	friend std::ostream& operator<<(std::ostream& strm, Rectangle& rect);
 };
 
 

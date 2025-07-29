@@ -2,6 +2,10 @@
 #include "Car.h"
 #include "RectangleConsole.h"
 #include "Dog.h"
+#include "Circle.h"
+#include "Rectangle.h"
+#include "Triangle.h"
+#include "Vehicle.h"
 #include "GuardDog.h"
 #include "HuntingDog.h"
 #include "Lapdog.h"
@@ -25,7 +29,31 @@ void displayCat(Cat cat);
 
 int main()
 {
+    Vehicle myVehicle;
+    Vehicle yourVehicle("Ferrarri", "Ferrari", 2000);
 
+    cout << myVehicle << endl;
+    cout << yourVehicle << endl;
+
+
+    Circle myCircle;
+    Circle yourCircle(6);
+    cout << myCircle << endl;
+    cout << yourCircle << endl;
+
+    Rectangle myRect;
+    Rectangle yourRect(10, 15);
+    cout << myRect << endl;
+    cout << yourRect << endl;
+
+    Triangle myTriangle;
+    Triangle yourTriangle(5, 6);
+    cout << myTriangle << endl;
+    cout << yourTriangle << endl;
+
+
+
+    /*
     Dog myDog;
 
     GuardDog yourDog("Flower");
@@ -36,18 +64,18 @@ int main()
 
     Mutt herDog;
 
-    Dog* theDogs = new Dog[5];
+    Dog** theDogs = new Dog*[5];
 
-    theDogs[0] = myDog;
-    theDogs[1] = yourDog;
-    theDogs[2] = hisDog;
-    theDogs[3] = theirDog;
-    theDogs[4] = herDog;
+    theDogs[0] = &myDog;
+    theDogs[1] = &yourDog;
+    theDogs[2] = &hisDog;
+    theDogs[3] = &theirDog;
+    theDogs[4] = &herDog;
     cout << "TRICKS are for Dogs" << endl;
     for (int i = 0; i < 5; i++)
-        (theDogs+i)->doTrick();
+        (theDogs[i])->doTrick();
 
-
+*/
 
     /*
     //testAssignmentOperator();
