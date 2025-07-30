@@ -6,20 +6,20 @@ using namespace std;
 class Triangle : public Shape
 {
 private:
-	double base;
-	double height;
+	int base;
+	int height;
 public:
 	// Constructors: default, one with base and height, and copy
 	Triangle();
-	Triangle(double base, double height);
+	Triangle(int base, int height);
 	Triangle(Triangle& otherTriangle);
 
 	// Getters and setters for base and height and area
-	double getBase();
-	double getHeight();
+	int getBase();
+	int getHeight();
 	double getArea();
-	void setBase(double base);
-	void setHeight(double height);
+	void setBase(int base);
+	void setHeight(int height);
 
 	// equals and << overload
 	Triangle& operator=(Triangle& otherTriangle);

@@ -4,7 +4,7 @@
 Circle::Circle() {
 	radius = 1;
 }
-Circle::Circle(double radius) {
+Circle::Circle(int radius) {
 	this->radius = radius;
 }
 Circle::Circle(Circle& otherCircle) {
@@ -13,10 +13,10 @@ Circle::Circle(Circle& otherCircle) {
 	}
 }
 // getters and setters
-void Circle::setRadius(double radius) {
+void Circle::setRadius(int radius) {
 	this->radius = radius;
 }
-double Circle::getRadius() {
+int Circle::getRadius() {
 	return radius;
 }
 double Circle::getArea() {

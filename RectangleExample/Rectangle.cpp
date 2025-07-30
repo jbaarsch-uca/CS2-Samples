@@ -3,7 +3,7 @@
 
 Rectangle::Rectangle() : Rectangle(1, 1) {}
 
-Rectangle::Rectangle(double l, double w) : length(l), width(w) {
+Rectangle::Rectangle(int l, int w) : length(l), width(w) {
 }
 
 Rectangle::Rectangle(Rectangle& otherRectangle) {
@@ -13,18 +13,18 @@ Rectangle::Rectangle(Rectangle& otherRectangle) {
 	}
 }
 
-void Rectangle::setLength(double l) {
+void Rectangle::setLength(int l) {
 	length = l;
 }
 
-double Rectangle::getLength() {
+int Rectangle::getLength() {
 	return length;
 }
-double Rectangle::getWidth() {
+int Rectangle::getWidth() {
 	return width;
 }
 
-void Rectangle::setWidth(double w) {
+void Rectangle::setWidth(int w) {
 	width = w;
 }
 

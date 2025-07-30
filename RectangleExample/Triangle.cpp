@@ -5,7 +5,7 @@ Triangle::Triangle() {
 	base = 1;
 	height = 1;
 }
-Triangle::Triangle(double base, double height) {
+Triangle::Triangle(int base, int height) {
 	this->base = base;
 	this->height = height;
 }
@@ -17,19 +17,19 @@ Triangle::Triangle(Triangle& otherTriangle) {
 }
 
 // Getters and setters for base and height and area
-double Triangle::getBase() {
+int Triangle::getBase() {
 	return base;
 }
-double Triangle::getHeight() {
+int Triangle::getHeight() {
 	return height;
 }
 double Triangle::getArea() {
 	return .5 * base * height;
 }
-void Triangle::setBase(double base) {
+void Triangle::setBase(int base) {
 	this->base = base;
 }
-void Triangle::setHeight(double height) {
+void Triangle::setHeight(int height) {
 	this->height = height;
 }
 

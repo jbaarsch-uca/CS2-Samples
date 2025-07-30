@@ -6,16 +6,16 @@
 
 class Rectangle : public Shape {
 private:
-	double length;
-	double width;
+	int length;
+	int width;
 public:
 	Rectangle();
-	Rectangle(double l, double w);
+	Rectangle(int l, int w);
 	Rectangle(Rectangle& otherRectangle);  // *
-	double getLength();
-	double getWidth();
-	void setLength(double l);
-	void setWidth(double w);
+	int getLength();
+	int getWidth();
+	void setLength(int l);
+	void setWidth(int w);
 	double getArea();
 	Rectangle& operator=(Rectangle& otherRect);
 	friend std::ostream& operator<<(std::ostream& strm, Rectangle& rect);

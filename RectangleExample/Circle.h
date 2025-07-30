@@ -5,15 +5,15 @@ class Circle :
     public Shape
 {
 private:
-    double radius;
+    int radius;
 public:
     // Constructors
     Circle();
-    Circle(double radius);
+    Circle(int radius);
     Circle(Circle& otherCircle);
     // getters and setters
-    void setRadius(double radius);
-    double getRadius();
+    void setRadius(int radius);
+    int getRadius();
     double getArea();
     // operator overloads
     Circle& operator=(Circle& otherCircle);
