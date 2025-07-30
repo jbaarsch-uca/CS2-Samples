@@ -25,6 +25,10 @@ void Cat::setName(string name) {
 	this->getName() = name;
 }
 
+string Cat::speak() {
+	return "Meow";
+}
+
 void Cat::addLikedFood(string food) {
 	numOfLikedFoods++;
 	string* newFoods = new string[numOfLikedFoods];

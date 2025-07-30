@@ -13,6 +13,7 @@ public:
 	Dog();
 	Dog(string name);
 	string displayDog();
+	virtual string speak();
 	friend Cat;
 	// getters and setters for weight
 	int getWeight() { return weight; }

@@ -13,55 +13,64 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\animals">
+      <UniqueIdentifier>{5c7a4d45-9852-434b-90e4-f2ccb2a74a70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vehicles">
+      <UniqueIdentifier>{25fc7fb7-87c8-43df-96d8-fb79e2b8f4de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes">
+      <UniqueIdentifier>{a4d89fce-504e-42bb-b0c2-30da9ebbf469}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainTester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Rectangle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Car.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RectangleConsole.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Cat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Dog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Die.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Animal.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\animals</Filter>
+    </ClCompile>
+    <ClCompile Include="Cat.cpp">
+      <Filter>Source Files\animals</Filter>
+    </ClCompile>
+    <ClCompile Include="Dog.cpp">
+      <Filter>Source Files\animals</Filter>
     </ClCompile>
     <ClCompile Include="HuntingDog.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\animals</Filter>
     </ClCompile>
     <ClCompile Include="GuardDog.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\animals</Filter>
     </ClCompile>
     <ClCompile Include="Lapdog.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\animals</Filter>
     </ClCompile>
     <ClCompile Include="Mutt.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\animals</Filter>
     </ClCompile>
-    <ClCompile Include="Shape.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Circle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Triangle.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Car.cpp">
+      <Filter>Source Files\vehicles</Filter>
     </ClCompile>
     <ClCompile Include="Vehicle.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Source Files\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Source Files\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleConsole.cpp">
+      <Filter>Source Files\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Source Files\shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files\shapes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

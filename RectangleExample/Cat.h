@@ -11,9 +11,10 @@ private:
 public:
 	Cat();
 	Cat(string name);
-	Cat(Cat& otherCat);
+	Cat(Cat& otherCat); 
 	string getName();
 	void setName(string name);
+	string speak();
 	string displayCat();
 	void addLikedFood(string food);
 	void changeFood(string food, int index);

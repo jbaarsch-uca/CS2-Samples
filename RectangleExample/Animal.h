@@ -10,7 +10,7 @@ public :
 	Animal() {
 		cout << "Animal Constructor called." << endl;
 	}
-	string speak();
+	virtual string speak() =0;
 	string getName() {
 		return name;
 	}

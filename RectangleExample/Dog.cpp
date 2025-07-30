@@ -14,6 +14,10 @@ Dog::Dog(string name) {
 		<< getName() << endl;
 }
 
+string Dog::speak() {
+	return "Woof!";
+}
+
 
 string Dog::displayDog() {
 	return "A Dog named " + this->getName();

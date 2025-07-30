@@ -14,6 +14,7 @@
 #include "Die.h"
 #include <iostream>
 #include <string>
+#include <typeinfo>
 using namespace std;
 
 // Basic Class Definitions from Day One:  Exploring Classes
@@ -29,6 +30,22 @@ void displayCat(Cat cat);
 
 int main()
 {
+
+    Dog* myDog = new Lapdog;
+
+    if (Animal* a1 = dynamic_cast<Animal*>(myDog))
+        cout << "It is an Animal!" << endl;
+    else
+        cout << "It is not an Animal!" << endl;
+
+    if (Lapdog* ld1 = dynamic_cast<Lapdog*>(myDog))
+        cout << "It is a Lapdog!" << endl;
+    else
+        cout << "It is not a Lapdog!" << endl;
+
+
+
+    /*
     Vehicle myVehicle;
     Vehicle yourVehicle("Ferrarri", "Ferrari", 2000);
 
@@ -51,7 +68,7 @@ int main()
     cout << myTriangle << endl;
     cout << yourTriangle << endl;
 
-
+    */
 
     /*
     Dog myDog;
