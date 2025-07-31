@@ -8,13 +8,21 @@
 #include "Vehicle.h"
 #include "GuardDog.h"
 #include "HuntingDog.h"
+#include "Comparable.h"
+#include "sideComparable.h"
 #include "Lapdog.h"
 #include "Animal.h"
 #include "Mutt.h"
+#include "Dessert.h"
 #include "Die.h"
 #include <iostream>
 #include <string>
 #include <typeinfo>
+#include <fstream>
+#include "IceCream.h"
+#include "Pudding.h"
+#include <vector>
+#include "ChocolateChipCookies.h"
 using namespace std;
 
 // Basic Class Definitions from Day One:  Exploring Classes
@@ -30,8 +38,54 @@ void displayCat(Cat cat);
 
 int main()
 {
+    ofstream fout("outputfile.txt");
 
-    Dog* myDog = new Lapdog;
+    //Rectangle* myRect = new Rectangle(4, 5);
+    //Triangle* myTriangle = new Triangle(3, 2);
+    //Circle* myCircle = new Circle(5);
+
+    Dessert* myDesserts = new Dessert[3];
+    IceCream* iceCream = new IceCream;
+    Pudding* pudding = new Pudding;
+    ChocolateChipCookies* cookie = new ChocolateChipCookies;
+
+    Dessert* another = iceCream;
+
+
+    vector<Dessert> yourDesserts;
+
+    yourDesserts.push_back(*iceCream);
+    yourDesserts.push_back(*pudding);
+
+    myDesserts = iceCream;
+    //myDesserts[1] = pudding;
+    ///myDesserts[2] = *cookie;
+
+    cout << another->preserve() << endl;
+    another = pudding;
+    cout << another->preserve() << endl;
+    another = cookie;
+    cout << another->preserve() << endl;
+    another = pudding;
+
+    //cout << (myDesserts+1)->preserve() << endl;
+    //cout << (myDesserts+2)->preserve() << endl;
+
+    /*
+    int size = 10;
+    Shape* s1 = new Circle(size);
+    Shape* s2 = new Rectangle(size, size);
+    Shape* s3 = new Triangle(size, size);
+    s1->draw(fout);
+    fout << endl;
+    s2->draw(fout);
+    fout << endl;
+    s3->draw(fout);
+    */
+
+
+    /*
+    Shape* myDog = new Triangle;
 
     if (Animal* a1 = dynamic_cast<Animal*>(myDog))
         cout << "It is an Animal!" << endl;
@@ -42,7 +96,7 @@ int main()
         cout << "It is a Lapdog!" << endl;
     else
         cout << "It is not a Lapdog!" << endl;
-
+        */
 
 
     /*

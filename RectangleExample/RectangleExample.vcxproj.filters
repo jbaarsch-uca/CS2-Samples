@@ -22,6 +22,15 @@
     <Filter Include="Source Files\shapes">
       <UniqueIdentifier>{a4d89fce-504e-42bb-b0c2-30da9ebbf469}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\amimals">
+      <UniqueIdentifier>{3390f570-6a02-49d0-bab8-18831ccc240c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\vehicle">
+      <UniqueIdentifier>{676e7f3a-65c3-47b3-a96d-007c99423a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\shape">
+      <UniqueIdentifier>{7bf04f84-f513-451c-bd5f-561c165abacb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainTester.cpp">
@@ -72,51 +81,75 @@
     <ClCompile Include="Triangle.cpp">
       <Filter>Source Files\shapes</Filter>
     </ClCompile>
+    <ClCompile Include="Dessert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChocolateChipCookies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pudding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IceCream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Rectangle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Car.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RectangleConsole.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Cat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Dog.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Die.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Animal.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\amimals</Filter>
     </ClInclude>
-    <ClInclude Include="HuntingDog.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Cat.h">
+      <Filter>Header Files\amimals</Filter>
+    </ClInclude>
+    <ClInclude Include="Dog.h">
+      <Filter>Header Files\amimals</Filter>
     </ClInclude>
     <ClInclude Include="GuardDog.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\amimals</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntingDog.h">
+      <Filter>Header Files\amimals</Filter>
     </ClInclude>
     <ClInclude Include="Lapdog.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\amimals</Filter>
     </ClInclude>
     <ClInclude Include="Mutt.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\amimals</Filter>
     </ClInclude>
-    <ClInclude Include="Shape.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Circle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Triangle.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Car.h">
+      <Filter>Header Files\vehicle</Filter>
     </ClInclude>
     <ClInclude Include="Vehicle.h">
+      <Filter>Header Files\vehicle</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Header Files\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Header Files\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleConsole.h">
+      <Filter>Header Files\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Header Files\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="Dessert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChocolateChipCookies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IceCream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pudding.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
